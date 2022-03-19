@@ -1,9 +1,9 @@
 <resources>
     <string name="app_name">BusinessCard</string>
     <string name="txt_business_card">Cartão de Visita</string>
-    <string name="cd_add_button">Add Button</string>
+    <string name="cd_add_button">Botão de Adicionar Cartão</string>
     <string name="txt_new_card">Novo Cartão</string>
-    <string name="cd_closed_button">Button to close new card layout</string>
+    <string name="cd_closed_button">Botão para Fechar Cadastro</string>
     <string name="txt_add_nome">Nome</string>
     <string name="txt_cellphone">Telefone</string>
     <string name="txt_mail">E-mail</string>
@@ -12,4 +12,14 @@
     <string name="txt_confirm">Confirmar</string>
     <string name="label_show_sucess">Cartão Cadastrado com Sucesso</string>
     <string name="label_share">Compartilhar</string>
+    <string-array name="colors">
+        <item>Branco</item>
+        <item>Azul</item>
+        <item>Verde</item>
+        <item>Vermelho</item>
+        <item>Cinza</item>
+        <item>Roxo</item>
+        <item>Amarelo</item>
+        <item>Laranja</item>
+    </string-array>
 </resources>

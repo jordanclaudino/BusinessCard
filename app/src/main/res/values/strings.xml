@@ -11,4 +11,5 @@
     <string name="txt_color">Cor</string>
     <string name="txt_confirm">Confirmar</string>
     <string name="label_show_sucess">Cartão Cadastrado com Sucesso</string>
+    <string name="label_share">Compartilhar</string>
 </resources>

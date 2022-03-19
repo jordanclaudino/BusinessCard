@@ -12,7 +12,7 @@ import me.dio.businesscard.databinding.ItemBusinessCardBinding
 
 class BusinessCardAdapter :
     ListAdapter<BusinessCard, BusinessCardAdapter.ViewHolder>(DiffCallback()) {
-
+    var listenerShare: (View) -> Unit = {}
 
     override fun onCreateViewHolder(parent: ViewGroup, viewType: Int): ViewHolder {
         val inflater = LayoutInflater.from(parent.context)
@@ -25,7 +25,7 @@ class BusinessCardAdapter :
         holder.bind(getItem(position))
     }
 
-    class ViewHolder (
+    inner class ViewHolder (
         private val binding: ItemBusinessCardBinding
         ) : RecyclerView.ViewHolder(binding.root){
             fun bind(item: BusinessCard) {
@@ -43,7 +43,7 @@ class BusinessCardAdapter :
 
 }
 
-var listenerShare: (View) -> Unit = {}
+
 
 class DiffCallback: DiffUtil.ItemCallback<BusinessCard>() {
     override fun areItemsTheSame(oldItem: BusinessCard, newItem: BusinessCard) = oldItem == newItem
